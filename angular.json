@@ -23,7 +23,7 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",              
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "shop-recipe-app"
+  "defaultProject": "shop-recipe-app",
+  "cli": {
+    "analytics": "b12df04b-5030-4499-9f7b-c7749d5e8584"
+  }
 }
