@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http'
+// import { HttpModule } from '@angular/http'
+import { HttpClientModule } from '@angular/common/http';
 
 
 import { AppComponent } from './app.component';
@@ -13,8 +14,8 @@ import { RecipesItemComponent } from './recipes/recipes-list/recipes-item/recipe
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 
-@NgModule({
-  declarations: [
+@NgModule({ // 這個TypeScript的標記指出此類別定義為一個Angular模組
+  declarations: [ // 宣告應用程式中使用的元件與指示
     AppComponent,
     HeaderComponent,
     RecipesComponent,
@@ -24,12 +25,13 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
     ShoppingListComponent,
     ShoppingEditComponent
   ],
-  imports: [
+  imports: [ // 匯入其他功能模組
     BrowserModule,
     FormsModule,
-    HttpModule
+    // HttpModule,
+    HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent] // 啟動影用程式的進入點元件
 })
 export class AppModule { }
